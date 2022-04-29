@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MTS_CRM.CONTROLLERS.CustomerController" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAIAAAABAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>CustomerController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="custCtrlInstance" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MTS_CRM.CONTROLLERS.EmployeeController" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEIAAAAAoEACAAASAAAAADAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>EmployeeController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="check" />
+      <Field Name="empCtrlInstance" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.227" Collapsed="true" />
+  </Class>
+  <Class Name="MTS_CRM.CONTROLLERS.LoginController" BaseTypeListCollapsed="true">
+    <Position X="11" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAABAAAAAABAAAAAAAAAAQ=</HashCode>
+      <FileName>LoginController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="loginCtrlInstance" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MTS_CRM.CONTROLLERS.ErrorCatcher.CatchError">
+    <Position X="16.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAABAAABAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>ErrorCatcher\CatchError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTS_CRM.CONTROLLERS.PasswordEncryption.SecurePassword">
+    <Position X="16.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABIAAQAAgAAAAAAAAAAAAAAAAAAAAIBAAAA=</HashCode>
+      <FileName>PasswordEncryption\SecurePassword.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTS_CRM.MODEL.EmailCheck">
+    <Position X="11.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MTS_CRM.DB.Company">
+    <Position X="9.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MTS_CRM.DB.Customer">
+    <Position X="10.5" Y="10.75" Width="1.5" />
+    <AssociationLine Name="Company" Type="MTS_CRM.DB.Company" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.047" Y="13.267" />
+        <Point X="11.047" Y="13.642" />
+        <Point X="10.562" Y="13.642" />
+        <Point X="10.562" Y="14.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Private" Type="MTS_CRM.DB.Private" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.656" Y="13.267" />
+        <Point X="11.656" Y="13.642" />
+        <Point X="12.188" Y="13.642" />
+        <Point X="12.188" Y="14.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Company" />
+      <Property Name="Private" />
+      <Property Name="Location" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MTS_CRM.DB.Employee">
+    <Position X="14.75" Y="11" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MTS_CRM.DB.Location">
+    <Position X="5.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MTS_CRM.DB.MTSContext">
+    <Position X="3" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MTS_CRM.DB.Private">
+    <Position X="11.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MTS_CRM.DB.Product">
+    <Position X="1.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MTS_CRM.DB.ProductToCustomer">
+    <Position X="7.5" Y="13" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Customer" />
+      <Property Name="Product" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MTS_CRM.DTO.CustomerDTO">
+    <Position X="5.5" Y="8" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MTS_CRM.DTO.EmployeeDTO">
+    <Position X="7.5" Y="8" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MTS_CRM.MODEL.ChatHub">
+    <Position X="18.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MTS_CRM.MODEL.EmployeeChat">
+    <Position X="20.75" Y="13" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MTS_CRM.MODEL.Message">
+    <Position X="20.5" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="MTS_CRM.CONTROLLERS.Interfaces.ICustomerController">
+    <Position X="12.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ICustomerController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MTS_CRM.CONTROLLERS.Interfaces.IEmployeeController">
+    <Position X="14.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAgEACAAASAAAAACAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IEmployeeController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MTS_CRM.CONTROLLERS.Interfaces.ILoginController">
+    <Position X="11" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILoginController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

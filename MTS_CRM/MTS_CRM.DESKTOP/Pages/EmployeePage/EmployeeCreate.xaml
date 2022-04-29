@@ -1,0 +1,46 @@
+﻿<Page x:Class="MTS_CRM.DESKTOP.Pages.EmployeePage.EmployeeCreate"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MTS_CRM.DESKTOP.Pages.EmployeePage"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EmployeeCreate">
+
+    <Grid>
+        <Label x:Name="EmailLabel" Content="Email:" HorizontalAlignment="Left" Margin="75,75,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="fnameLabel" Content="First Name:" HorizontalAlignment="Left" Margin="46,106,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lnameLabel" Content="Last Name:" HorizontalAlignment="Left" Margin="47,137,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="dateOfBirthLabel" Content="Date Of Birth" HorizontalAlignment="Left" Margin="37,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.618,0.231"/>
+        <Label x:Name="phoneNumberLabel" Content="Phone Number:" HorizontalAlignment="Left" Margin="23,199,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="positionLabel" Content="Position:" HorizontalAlignment="Left" Margin="61,230,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="adminLabel" Content="Admin:" HorizontalAlignment="Left" Margin="69,261,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="emailTXT" HorizontalAlignment="Left" Height="23" Margin="121,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="firstNameTXT" HorizontalAlignment="Left" Height="23" Margin="121,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="lastNameTXT" HorizontalAlignment="Left" Height="23" Margin="121,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="phoneNumberTXT" HorizontalAlignment="Left" Height="23" Margin="121,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="positionTXT" HorizontalAlignment="Left" Height="23" Margin="121,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <RadioButton x:Name="adminRadio" Content="" HorizontalAlignment="Left" Margin="121,267,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="registerEmployeeBTN" Content="Register Employee" HorizontalAlignment="Left" Margin="121,300,0,0" VerticalAlignment="Top" Width="110" Click="registerEmployeeBTN_Click"/>
+        <Label Content="Username:" HorizontalAlignment="Left" Margin="368,75,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="372,106,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="usernameTXT" HorizontalAlignment="Left" Height="24" Margin="439,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="passwordTXT" HorizontalAlignment="Left" Margin="439,110,0,0" VerticalAlignment="Top" Width="120" Height="22" KeyUp="passwordTXT_KeyUp"/>
+        <DatePicker x:Name="datePickerTXT" HorizontalAlignment="Left" Margin="121,169,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="passwordNeedsLBL" Content="Password needs at least:" HorizontalAlignment="Left" Margin="439,137,0,0" VerticalAlignment="Top" FontSize="10" Visibility="Hidden"/>
+        <Label x:Name="oneNoLBL" Content="&#x2022; 1 number" HorizontalAlignment="Left" Margin="439,149,0,0" VerticalAlignment="Top" FontSize="10" Visibility="Hidden"/>
+        <Label x:Name="fiveCharactersLBL" Content="&#x2022; No less than 5 charecters" HorizontalAlignment="Left" Margin="439,173,0,0" VerticalAlignment="Top" FontSize="10" Visibility="Hidden"/>
+        <Label x:Name="oneUpperCaseLBL" Content="&#x2022; 1 Upper Case" HorizontalAlignment="Left" Margin="439,161,0,0" VerticalAlignment="Top" FontSize="10" Visibility="Hidden"/>
+        <Label Content="*" HorizontalAlignment="Left" Margin="246,76,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label Content="*" HorizontalAlignment="Left" Margin="246,167,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label Content="*" HorizontalAlignment="Left" Margin="246,138,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label Content="*" HorizontalAlignment="Left" Margin="246,106,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label Content="*" HorizontalAlignment="Left" Margin="246,198,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label Content="*" HorizontalAlignment="Left" Margin="564,75,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label Content="*" HorizontalAlignment="Left" Margin="564,106,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label Content="* fields are required" HorizontalAlignment="Left" Margin="61,336,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label x:Name="loadingLBL" Content="Loading..." HorizontalAlignment="Left" Margin="340,200,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+
+    </Grid>
+</Page>
